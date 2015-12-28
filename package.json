@@ -7,13 +7,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --devtool eval --progress --colors --hot --open",
-    "build": "webpack"
+    "build": "webpack -p"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^5.8.34",
     "babel-loader": "^5.4.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-redux": "^4.0.5",
     "redux": "^3.0.5",
     "webpack": "^1.12.6",
     "webpack-dev-server": "^1.12.1"
