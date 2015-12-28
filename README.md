@@ -1,8 +1,8 @@
 # Redux example without React
 first clone this repository to your computer.
 ```sh
-git clone https://github.com/chnbohwr/redux_without_react
-cd redux_without_react
+git clone https://github.com/chnbohwr/redux_with_react
+cd redux_with_react
 ```
 
 ### start
