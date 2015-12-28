@@ -1,4 +1,4 @@
-import TYPES from './action.js'
+import { TYPES } from './action.js'
 
 let initialState = {
     clickCount: 0

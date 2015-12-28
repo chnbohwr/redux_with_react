@@ -4,7 +4,7 @@ export const TYPES = {
 
 export function clickAction(count = 1, delay = 0) {
     return{
-        type: CLICKEVENT,
+        type: TYPES.CLICKEVENT,
         count,
         delay
     };
