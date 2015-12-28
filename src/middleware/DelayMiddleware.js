@@ -1,4 +1,4 @@
-export default delayMiddleware = store => next => action => {
+const delayMiddleware = store => next => action => {
     if (action.delay) {
         return setTimeout(() => {
             next(action);
@@ -7,3 +7,4 @@ export default delayMiddleware = store => next => action => {
         next(action);
     }
 }
+export default delayMiddleware;

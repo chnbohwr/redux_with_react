@@ -1,5 +1,6 @@
 import React from 'react';
-
+import actions from './action.js';
+console.log(actions);
 export default class CountButton extends React.Component{
     render(){
             return (

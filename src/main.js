@@ -30,9 +30,10 @@
 import ReactDom from 'react-dom';
 import React from 'react';
 import store from 'store/index';
-import Provider from 'react-redux';
+import { Provider } from 'react-redux';
 import CountButton from 'component/CountButton';
-
+console.log(Provider);
+console.log(store);
 let app = (
     <Provider store={store}>
         <CountButton/>

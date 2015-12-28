@@ -9,3 +9,7 @@ export function clickAction(count = 1, delay = 0) {
         delay
     };
 }
+
+export default {
+    clickAction
+};
