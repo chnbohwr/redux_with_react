@@ -29,5 +29,14 @@
 
 import ReactDom from 'react-dom';
 import React from 'react';
+import store from 'store/index';
+import Provider from 'react-redux';
 import CountButton from 'component/CountButton';
-ReactDom.render(<CountButton/>, document.getElementById('app'))
+
+let app = (
+    <Provider store={store}>
+        <CountButton/>
+    </Provider>
+);
+
+ReactDom.render(app, document.getElementById('app'))

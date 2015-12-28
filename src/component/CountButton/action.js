@@ -1,5 +1,5 @@
 export const TYPES = {
-    CLICKEVENT: 'CLICKEVENT';
+    CLICKEVENT: 'CLICKEVENT'
 };
 
 export function clickAction(count = 1, delay = 0) {

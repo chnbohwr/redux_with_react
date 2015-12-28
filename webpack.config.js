@@ -1,7 +1,6 @@
 var path = require('path');
 module.exports = {
-    context: __dirname + "/src",
-    entry: './main.js',
+    entry: './src/main.js',
     output: {
         filename: './dist/bundle.js'
     },
@@ -15,7 +14,9 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.jsx'],
         alias: {
-            "component": path.join(__dirname, "./src/component")
+            "component": path.join(__dirname, "./src/component"),
+            "middleware": path.join(__dirname, "./src/middleware"),
+            "store": path.join(__dirname, "./src/store")
         }
     },
     devtool: 'source-map'
