@@ -5,7 +5,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "karma start",
     "dev": "webpack-dev-server --devtool eval --progress --colors --hot --open",
     "build": "webpack -p"
   },
@@ -20,5 +20,15 @@
     "redux": "^3.0.5",
     "webpack": "^1.12.6",
     "webpack-dev-server": "^1.12.1"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "karma": "^0.13.19",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^0.2.1",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.3.4",
+    "phantomjs": "^1.9.19"
   }
 }
