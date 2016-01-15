@@ -1,11 +1,26 @@
-import actions, {TYPES} from 'component/CountButton/action.js';
+import {TYPES, clickAction} from 'component/CountButton/action.js';
 
-describe('test1', function () {
+describe('test CountButton action', function () {
     
-    it('good', function () {
+    it('test clickAction without params', function () {
+        let answer = {
+            type: TYPES.CLICKEVENT,
+            count: 1,
+            delay: 0
+        };
         
-        console.log(TYPES);
-        expect(1).to.equal(1);
+        expect(clickAction()).to.deep.equal(answer);
+    
+    });
+    
+    it('test clickAction with params', function () {
+        let answer = {
+            type: TYPES.CLICKEVENT,
+            count: 3,
+            delay: 1
+        };
+        
+        expect(clickAction(3,1)).to.deep.equal(answer);
     
     });
     

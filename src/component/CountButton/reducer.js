@@ -1,6 +1,6 @@
 import { TYPES } from './action.js'
 
-let initialState = {
+export const initialState = {
     clickCount: 0
 };
 
@@ -13,3 +13,4 @@ export default function clickReducer (state = initialState, action) {
             return state;
     }
 }
+
