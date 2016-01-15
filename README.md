@@ -13,3 +13,10 @@ npm run dev
 ```
 open browser to http://127.0.0.1:8080
 the app will show
+
+
+###test
+
+```sh
+npm test
+```
