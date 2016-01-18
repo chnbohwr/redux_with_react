@@ -5,7 +5,7 @@ module.exports = function(config) {
     basePath: '',
     browsers: [ 'PhantomJS' ],
     files: [
-      'test/index.js'
+      './testfiles.js'
     ],
     port: 8080,
     captureTimeout: 60000,
@@ -16,7 +16,7 @@ module.exports = function(config) {
     singleRun: true,
     reporters: [ 'mocha', 'coverage' ],
     preprocessors: {
-      'test/index.js': [ 'webpack', 'sourcemap' ]
+      './testfiles.js': [ 'webpack', 'sourcemap' ]
     },
     webpack: webpackCfg,
     webpackServer: {
