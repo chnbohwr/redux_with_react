@@ -12,8 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-core": "^5.8.34",
-    "babel-loader": "^5.4.0",
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-0": "^6.3.13",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "^4.0.5",
@@ -22,13 +25,20 @@
     "webpack-dev-server": "^1.12.1"
   },
   "devDependencies": {
+    "bower-webpack-plugin": "^0.1.9",
     "chai": "^3.4.1",
+    "isparta-instrumenter-loader": "^1.0.0",
     "karma": "^0.13.19",
     "karma-chai": "^0.1.0",
+    "karma-coverage": "^0.5.3",
     "karma-mocha": "^0.2.1",
+    "karma-mocha-reporter": "^1.1.5",
     "karma-phantomjs-launcher": "^0.2.3",
+    "karma-phantomjs-shim": "^1.2.0",
+    "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
     "mocha": "^2.3.4",
+    "null-loader": "^0.1.1",
     "phantomjs": "^1.9.19"
   }
 }
