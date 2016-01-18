@@ -7,7 +7,8 @@
   "scripts": {
     "test": "karma start",
     "dev": "webpack-dev-server --devtool eval --progress --colors --hot --open",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "test:watch": "karma start --autoWatch=true --singleRun=false"
   },
   "author": "",
   "license": "ISC",
@@ -35,10 +36,14 @@
     "karma-mocha-reporter": "^1.1.5",
     "karma-phantomjs-launcher": "^0.2.3",
     "karma-phantomjs-shim": "^1.2.0",
+    "karma-sinon": "^1.0.4",
+    "karma-sinon-chai": "^1.1.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
     "mocha": "^2.3.4",
     "null-loader": "^0.1.1",
-    "phantomjs": "^1.9.19"
+    "phantomjs": "^1.9.19",
+    "react-addons-test-utils": "^0.14.6",
+    "sinon": "^1.17.2"
   }
 }
